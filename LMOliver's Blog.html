@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>主页 - LMOliver's Blog</title>
+    <script defer="" src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.15.6/build/highlight.min.js"></script>
+    <script defer="" src="https://cdn.jsdelivr.net/npm/axios@0.12.0/dist/axios.min.js"></script>
+    <script defer="" src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script defer="" src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script defer="" src="https://cdn.jsdelivr.net/npm/katex@0.10.1/dist/katex.min.js"
+        integrity="sha384-2BKqo+exmr9su6dir+qCw08N2ZKRucY4PrGQPPWU1A7FtlCGjmEGFqXCv5nyM5Ij"
+        crossorigin="anonymous"></script>
+    <script defer="" src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+    <script defer="" src="./blog.js"></script>
+    <script defer="" src="./blog-main.js"></script>
+    <link rel="stylesheet" href="../normalize.css">
+    <link rel="stylesheet" href="./blog.css">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.15.6/build/styles/default.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.1/dist/katex.min.css"
+        integrity="sha384-dbVIfZGuN1Yq7/1Ocstc1lUEm+AT+/rCkibIcC/OmWo5f0EA48Vf8CytHzGrSwbQ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+</head>
+
+<body>
+    <div id="app">
+        <header><a href="#!">
+                <h1 style="display: inline; color: dodgerblue; margin: 0px;">LMOliver</h1>
+            </a></header>
+        <div id="page">
+            <aside class="sidebar" style="float: left;">
+                <div class="contains sideblock"><strong>友链</strong>
+                    <hr>
+                    <ul>
+                        <li><a href="https://orzsiyuan.com" class="cf-black-red">Siyuan</a></li>
+                        <li><a href="https://www.cnblogs.com/stepsys/" class="cf-black-red">stepsys</a></li>
+                        <li><a href="https://www.cnblogs.com/wjnclln/" class="cf-black-red">Trimsteanima</a></li>
+                        <li><a href="https://www.cnblogs.com/zhouzhendong/" class="cf-black-red">zhouzhendong</a></li>
+                        <li><a href="https://chy-2003.github.io" class="cf-black-red">CHY</a></li>
+                    </ul>
+                </div>
+            </aside>
+            <aside class="sidebar" style="float: right;">
+                <div class="contains sideblock"><strong>关于本人</strong>
+                    <hr>
+                    <p>LMOliver 是菜鸡，天天被吊打。</p> <a href="https://github.com/LMOliver">GitHub</a>
+                </div>
+            </aside>
+            <div id="main">
+                <article class="contains">
+                    <div>
+                        <h1>主页</h1>
+                    </div>
+                    <p></p>
+                    <p>LMOliver's Blog~</p>
+                    <hr>
+                    <p>这可能是全世界最烂的博客……</p>
+                    <p>不管怎样，<a href="#!">LMOliver's Blog</a> 欢迎您！</p>
+                    <p>
+                        <div><a href="#!cf1217d" class="contains" style="display: block;">
+                                <div>
+                                    <p></p>
+                                    <h3 style="display: inline;">每日膜拜 Siyuan | Codeforces 1217D</h3> <span>2019-9-15
+                                        11:01</span>
+                                    <p></p>
+                                    <p><span>CF 1217D - Coloring Edges</span></p>
+                                </div>
+                            </a><a href="#!cf1204e" class="contains" style="display: block;">
+                                <div>
+                                    <p></p>
+                                    <h3 style="display: inline;">每日膜拜 Siyuan | Codeforces 1204E</h3> <span>2019-9-11
+                                        8:25</span>
+                                    <p></p>
+                                    <p><span>CF 1204E - Natasha, Sasha and the Prefix Sums</span></p>
+                                </div>
+                            </a><a href="#!fwt" class="contains" style="display: block;">
+                                <div>
+                                    <p></p>
+                                    <h3 style="display: inline;">算法笔记 | 快速沃尔什变换</h3> <span>2019-8-31 15:34</span>
+                                    <p></p>
+                                    <p><span>与 FFT 相似，FWT 可以快速求出两个数列的位运算卷积。</span></p>
+                                </div>
+                            </a><a href="#!the-d2t2" class="contains" style="display: block;">
+                                <div>
+                                    <p></p>
+                                    <h3 style="display: inline;">每日膜拜 Siyuan | 视觉程序</h3> <span>2019-8-14 18:01</span>
+                                    <p></p>
+                                    <p><span>Siyuan 又 AK 了…… D2T2 - vision</span></p>
+                                </div>
+                            </a><a href="#!cf1174f" class="contains" style="display: block;">
+                                <div>
+                                    <p></p>
+                                    <h3 style="display: inline;">每日膜拜 Siyuan | Codeforces 1174F</h3> <span>2019-8-8
+                                        16:17</span>
+                                    <p></p>
+                                    <p><span>CF 1174F - Ehab and the Big Finale</span></p>
+                                </div>
+                            </a><a href="#!zjoi2019" class="contains" style="display: block;">
+                                <div>
+                                    <p></p>
+                                    <h3 style="display: inline;">ZJOI2019 游记</h3> <span>2019-3-27 20:36</span>
+                                    <p></p>
+                                    <p><span>LMOliver 的省选爆零记</span></p>
+                                </div>
+                            </a><a href="#!algorithm-ztef" class="contains" style="display: block;">
+                                <div>
+                                    <p></p>
+                                    <h3 style="display: inline;">算法笔记 | 整体二分</h3> <span>2019-3-7 20:54</span>
+                                    <p></p>
+                                    <p><span>整体二分是对普通二分算法的一种优化，通过一次处理所有操作的方式优化复杂度。</span></p>
+                                </div>
+                            </a><a href="#!cf545" class="contains" style="display: block;">
+                                <div>
+                                    <p></p>
+                                    <h3 style="display: inline;">CF Round #545 比赛记</h3> <span>2019-3-9 11:11</span>
+                                    <p></p>
+                                    <p><span>早开 D 题好啊~</span></p>
+                                </div>
+                            </a><a href="#!about-qsharp" class="contains" style="display: block;">
+                                <div>
+                                    <p></p>
+                                    <h3 style="display: inline;">CF1115 Q# Coding Contest</h3> <span>2019-2-26
+                                        13:54</span>
+                                    <p></p>
+                                    <p><span>我太弱了，并不会做 U3。弃坑了 QAQ</span></p>
+                                </div>
+                            </a><a href="#!lct-hole" class="contains" style="display: block;">
+                                <div>
+                                    <p></p>
+                                    <h3 style="display: inline;">掉入 LCT 的大坑</h3> <span>2019-2-26 22:01</span>
+                                    <p></p>
+                                    <p><span>我到底什么时候才能 AC？</span></p>
+                                </div>
+                            </a><a href="#!css-naive" class="contains" style="display: block;">
+                                <div>
+                                    <p></p>
+                                    <h3 style="display: inline;">我终究还是太 naive</h3> <span>2019-3-13 19:30</span>
+                                    <p></p>
+                                    <p><span>怪自己太菜，只能 QAQ</span></p>
+                                </div>
+                            </a><a href="#!test" class="contains" style="display: block;">
+                                <div>
+                                    <p></p>
+                                    <h3 style="display: inline;">测试</h3> <span>2019-3-7 15:48</span>
+                                    <p></p>
+                                    <p><span>用于测试的博文</span></p>
+                                </div>
+                            </a></div>
+                    </p>
+                </article>
+                <div class="contains" style="display: none;">
+                    <h2>评论区</h2>
+                    <div></div>
+                </div>
+            </div>
+        </div>
+        <footer><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="知识共享许可协议"
+                    src="https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png"
+                    style="border-width: 0px;"></a><br>本作品采用<a rel="license"
+                href="http://creativecommons.org/licenses/by-nc-sa/4.0/">知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a>进行许可。
+        </footer>
+    </div>
+
+</body>
+
+</html>
