@@ -1477,34 +1477,34 @@
     </ol>
     <h2><a name='header-n125' class='md-header-anchor '></a>4.后记</h2>
     <p>git还有很多强大的功能和配置，不过我还用不到，就先写到这。</p>
-  </div>
-  <div id='write' class='is-node'>
-    <h1>开版本倒车</h1>
-    <p>
-      <h2>1.No add and no commit</h2>
-      <code>git checkout --${filename}</code>
+    <div>
+      <h1>开版本倒车</h1>
       <p>
-        撤销工作区的改动（回到跟版本库一样的状态，即回到最近一次 git commit时的状态，所有改动全部清除） 
+        <h2>1.No add and no commit</h2>
+        <code>git checkout --${filename}</code>
+        <p>
+          撤销工作区的改动（回到跟版本库一样的状态，即回到最近一次 git commit时的状态，所有改动全部清除） 
+        </p>
+        <p>
+          至于加不加 --其实问题不大，只要保证文件别和文件夹重名了就可
+        </p>
       </p>
       <p>
-        至于加不加 --其实问题不大，只要保证文件别和文件夹重名了就可
+        <h2>2.Have added but no commit</h2>
+        <p><code>git reset HEAD ${filename}//撤销add</code></p>
+        <p><code>git status//查看当前状态</code></p>
+        <p><code>git checkout --${filename}//回到第一种情况</code></p>
       </p>
-    </p>
-    <p>
-      <h2>2.Have added but no commit</h2>
-      <p><code>git reset HEAD ${filename}//撤销add</code></p>
-      <p><code>git status//查看当前状态</code></p>
-      <p><code>git checkout --${filename}//回到第一种情况</code></p>
-    </p>
-    <p>
-      <h2>3.Have added and have committed</h2>
-      <p><code>git reflog//显示所有的版本、操作</code></p>
-      <p><code>git reset --hard (reflog输出的黄字)</code></p>
-    </p>
-  </div>
-  <div>
-    <p><code>git branch</code></p>
-    <p><code>git merge</code></p>
+      <p>
+        <h2>3.Have added and have committed</h2>
+        <p><code>git reflog//显示所有的版本、操作</code></p>
+        <p><code>git reset --hard (reflog输出的黄字)</code></p>
+      </p>
+    </div>
+    <div>
+      <p><code>git branch</code></p>
+      <p><code>git merge</code></p>
+    </div>
   </div>
 </body>
 
